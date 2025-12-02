@@ -9,7 +9,7 @@ app.use(express.json());
 
 // MongoDB Connection
 const DB_URL = 'mongodb+srv://raven:12345@test.q3j1urd.mongodb.net/Cart';
-const JWT_SECRET = 'your-secret-key-change-in-production';
+const JWT_SECRET = '12345';
 
 mongoose.connect(DB_URL)
     .then(() => console.log('✓ Cart Server Connected to Database'))
@@ -810,4 +810,5 @@ const PORT = 3002;
 app.listen(PORT, () => {
     console.log('✓ Cart & Wishlist Server is running!');
     console.log('✓ http://localhost:' + PORT);
+
 });
